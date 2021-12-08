@@ -1,0 +1,13 @@
+#sidebar {
+    background-color: red;
+    flex: 1;
+  }
+  
+  #main {
+    background-color: blue;
+    flex: 5;
+  }
+  
+  #wrapper {
+    display: flex;
+  }
