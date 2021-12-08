@@ -1,13 +1,49 @@
+body {
+    background-color: rgb(5, 128, 87);
+}
+
+nav {
+    height: 100%;
+}
+
 #sidebar {
-    background-color: red;
+    border: 4px solid rgb(26, 20, 20);
+    background-color: gray;
     flex: 1;
-  }
+    margin-left: 25px;
+    margin-right: 25px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
   
-  #main {
+#main {
     background-color: blue;
     flex: 5;
-  }
+}
   
-  #wrapper {
+#wrapper {
     display: flex;
-  }
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 100px;
+}
+
+#nav_list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+}
+
+.center {
+    text-align: center;
+}
+
+.nav_item {
+    color: blue;
+    flex: 1;
+}
