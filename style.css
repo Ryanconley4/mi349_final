@@ -6,6 +6,81 @@ nav {
     height: 100%;
 }
 
+main {
+    background-color: gray;
+    flex: 5;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    flex: 3;
+    font-size: xx-large;
+}
+
+h2 {
+    flex: 1;
+    font-size: medium;
+}
+
+main, p {
+    flex: 11;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 3fr 2fr;
+    gap: 5px;
+}
+
+input, textarea{
+    background-color: wheat;
+}
+
+[for=name] {
+    grid-column: 1;
+    grid-row: 1/3;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+[for=email] {
+    grid-column: 1;
+    grid-row: 3;
+    margin-left: 5px;
+}
+
+[for=reason] {
+    grid-column: 2;
+    grid-row: 1;
+    margin-top: 5px;
+}
+
+#reason_box {
+    grid-column: 2;
+    grid-row: 2/5;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#submit {
+    grid-column: 1;
+    grid-row: 4;
+    justify-content: center;
+    background-color: wheat;
+    width: 100px;
+    height: 20px;
+    margin-left: 50px;
+}
+
+footer {
+    background-color: gray;
+    margin-left: 25px;
+    display: flex;
+    margin-top: 25px;
+}
+
 #sidebar {
     border: 4px solid rgb(26, 20, 20);
     background-color: gray;
@@ -16,12 +91,7 @@ nav {
     position: sticky;
     top: 0;
 }
-  
-#main {
-    background-color: blue;
-    flex: 5;
-}
-  
+
 #wrapper {
     display: flex;
 }
@@ -46,4 +116,10 @@ nav {
 .nav_item {
     color: blue;
     flex: 1;
+}
+
+.contact {
+    flex: 1;
+    border: solid 2px rgb(26, 20, 20);
+    margin: 0;
 }
