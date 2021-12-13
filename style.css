@@ -98,8 +98,6 @@ footer {
 }
 
 #navbar {
-    /* border: 4px solid rgb(26, 20, 20);
-    background-color: rgb(126, 199, 233); */
     flex: 2;
     margin-left: 25px;
     margin-right: 25px;
@@ -215,8 +213,6 @@ footer {
 }
 
 #experience img {
-    /* position: relative;
-    left: 20%; */
     background-color: rgb(126, 199, 233);
     border: solid 2px rgb(26, 20, 20);
     margin-left: 10px;
@@ -246,11 +242,6 @@ footer {
     margin-left: 0;
     margin: 0 0;
 }
-
-/* .left {
-    position: relative;
-    left: 20%;
-} */
 
 #sml_description {
     grid-row: 2/5;
@@ -371,4 +362,44 @@ footer {
     flex: 1;
     border: solid 2px rgb(26, 20, 20);
     margin: 0;
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    main {
+        font-size: small;
+        flex: 16;
+    }
+    #navbar {
+        flex: 4;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    #contact_form {
+        flex: 14;
+    }
+    #socials {
+        flex: 6;
+        font-size: x-small;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form label, button {
+        flex: 1;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    #reason {
+        margin: auto 5%;
+    }
 }
